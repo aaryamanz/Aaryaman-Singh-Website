@@ -15,26 +15,30 @@ const { src = '/aaryamansinghphoto.png' } = Astro.props
           <span class="text-gradient">Mechanical Engineering 2T6 + PEY | Minor in AI/ML | Engineering Business</span>
         </div>
         <div class="flex flex-col gap-3 min-[500px]:flex-row">
-          <a class="button has-icon" href="https://www.linkedin.com/in/aaryamansingh/">
+
+          <a 
+          class="button has-icon color-neutral" 
+          href="https://www.linkedin.com/in/aaryamansingh/">
             <Icon name="ion:star-outline" />
             Linkedin
           </a>
           <a
-            class="button has-icon color-secondary"
+            class="button has-icon color-neutral"
             href="https://www.instagram.com/aaryamanz/"
           >
             <Icon name="ion:star-outline" />
             Instagram
           </a>
           <a
-            class="button has-icon color-primary"
+            class="button has-icon color-neutral"
             href="https://github.com/aaryamanz/Resume/blob/main/Aaryaman%20Singh%20Resume.docx.pdf/">
             <Icon name="ion:star-outline" />
             Resume
           </a>
         </div>
       </div>
-      <img class="hidden lg:block" src={src} alt="" decoding="async" />
+      <img class="hidden lg:block rounded-full" src={src} alt="" decoding="async" />
     </div>
   </div>
+
 </section>

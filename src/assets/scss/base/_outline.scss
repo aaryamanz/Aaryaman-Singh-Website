@@ -3,8 +3,8 @@
 // | -------------------------------------------------------------
 
 @mixin outline {
-  outline: 2px dotted black;
-  outline-color: black;
+  outline: 2px dotted rgb(0, 0, 0);
+  outline-color: rgb(255, 255, 255);
   outline-offset: 0;
   -webkit-box-shadow: 0 0 0 2px white;
   box-shadow: 0 0 0 2px white;
@@ -19,3 +19,4 @@
   outline: none;
   box-shadow: none;
 }
+
