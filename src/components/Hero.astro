@@ -1,8 +1,10 @@
 ---
 import { Icon } from 'astro-icon/components'
-
+import '/Users/aaryamansingh/Desktop/Others/Coding/Web Development/accessible-astro-starter-main/src/assets/css/styles.css';
 const { src = '/aaryamansinghphoto.png' } = Astro.props
+import '/Users/aaryamansingh/Desktop/Others/Coding/Web Development/accessible-astro-starter-main/src/assets/css/animation.css';
 ---
+
 <section class="hero my-24">
   <div class="container">
     <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
@@ -40,5 +42,21 @@ const { src = '/aaryamansinghphoto.png' } = Astro.props
       <img class="hidden lg:block rounded-full" src={src} alt="" decoding="async" />
     </div>
   </div>
+
+    <!-- Light Mode: Particles -->
+    <div class='relative inset-0 block dark:hidden'>
+      <div id='particles1' class='fixed inset-0'></div>
+      <div id='particles2' class='fixed inset-0'></div>
+      <div id='particles3' class='fixed inset-0'></div>
+    </div>
+
+    <!-- Dark Theme: Stars -->
+    <div class='relative inset-0 hidden dark:block'>
+      <div id='stars1' class='fixed inset-0'></div>
+      <div id='stars2' class='fixed inset-0'></div>
+      <div id='stars3' class='fixed inset-0'></div>
+    </div>
+    <script is:inline src="/js/bg.js"></script>
+
 
 </section>

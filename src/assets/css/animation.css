@@ -1,0 +1,28 @@
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+@keyframes animateParticle {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(2000px);
+  }
+}
+
+@keyframes moveUp {
+  0% { transform: translateY(100vh); }
+  100% { transform: translateY(-100vh); }
+}
+
+@keyframes twinkling {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}

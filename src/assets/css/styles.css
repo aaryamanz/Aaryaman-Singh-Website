@@ -1,0 +1,18 @@
+.fixed.inset-0 {
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+.main-content {
+    position: relative;
+    min-height: 100vh;
+    overflow: auto;
+  }
+  
+#particles1, #particles2, #particles3 {
+    animation: moveUp 20s linear infinite alternate;
+  }
+  
+#stars1, #stars2, #stars3 {
+    animation: twinkling 3s ease-in-out infinite alternate;
+  }
