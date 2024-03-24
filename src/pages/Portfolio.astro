@@ -5,6 +5,8 @@ import Feature from '../components/Feature.astro'
 import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
 import ContentMedia2 from '../components/ContentMedia2.astro'
+import myButton from '../components/myButton.astro';
+
 ---
 <DefaultLayout title="Portfolio">
 
@@ -38,7 +40,7 @@ import ContentMedia2 from '../components/ContentMedia2.astro'
     The design successfully achieved a 3:1 speed reduction ratio in a right-angle gearbox, with input and output shafts oriented at a 90° angle without the use of worm gears, adhering to the specified constraints. Utilizing Solidworks, the gearbox was meticulously designed, incorporating Geometric Dimensioning and Tolerancing (GD&T) for precision across all components. The assembly was streamlined through the integration of a support mechanism using pins, and gears were precisely designed using Solidworks' toolbox to ensure the correct pitch ratios and shaft diameters were met. This approach not only facilitated rapid prototyping for iterative design enhancements but also ensured the entire assembly could be completed within the stringent timeframe of under 10 minutes. Additionally, the design was optimized for 3D printing, allowing for fabrication to be completed within a maximum of 6 hours, showcasing an efficient and effective design and manufacturing process.</p>
   </ContentMedia2>
 
-    <ContentMedia imgSrc="/portfolio/piston1.PNG" reverseImg={true}>
+    <ContentMedia imgSrc="/portfolio/piston1.png" reverseImg={true}>
     <h2>Piston: Air Compressed</h2>
     <p class="text-2l">
     Leveraging isometric drawing instructions and an aluminium block, a complete air-compressed piston engine was designed from scratch. The process involved meticulous blueprint reading and the utilization of CNC milling, lathe, and drill press to achieve precise machining. Advanced design calculations were performed to optimize the center of gravity, ensuring the engine's efficiency and performance. Within a remarkable timeframe of just under two days, this project culminated in the expert engineering and assembly of a fully operational piston engine. This achievement not only demonstrates rapid prototyping skills but also underscores mechanical ingenuity, highlighting the ability to swiftly bring complex mechanical designs from concept to reality.
@@ -73,8 +75,27 @@ import ContentMedia2 from '../components/ContentMedia2.astro'
 
     <ContentMedia imgSrc="/portfolio/music1.png" reverseImg={true}>
     <h2>Music Genre Categorization: Deep Learning</h2>
-    <astro-dev-toolbar-card icon="astro:logo" link="https://github.com/aaryamanz/music-genre-categorization" card>GitHub</astro-dev-toolbar-card>
-    <p class="text-2l">
+    <a href="https://github.com/aaryamanz/music-genre-categorization" class="github-link">Visit GitHub</a>
+    <style>
+      .github-link {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 200px;
+        background-color: transparent;
+        color: black; /* Default text color */
+        text-decoration: none;
+        border-radius: 15px;
+        font-weight: bold;
+        border: 2px solid black; /* Default border color */
+      }
+      @media (prefers-color-scheme: dark) {
+        .github-link {
+          color: white; /* Text color in dark mode */
+          border-color: white; /* Border color in dark mode */
+        }
+      }
+    </style>
+
     I enhanced the GTZAN dataset through data augmentation and conducted a detailed analysis of the audio signals. By visualizing these signals in the time domain and examining their frequency components over 0.01-second intervals using Fast Fourier Transform (FFT), I gained insights into the underlying patterns of the audio samples. This analysis enabled me to generate spectrograms, providing a visual representation of the spectrum of frequencies in the audio files as they vary with time.
 
     To further harness the power of deep learning for audio classification, I utilized the AlexNet neural network as a feature extractor. This approach allowed me to capture the essential features from the spectrograms effectively. Building on this, I implemented a fully connected neural network to classify the audio samples. This combination of a sophisticated feature extraction technique with a robust classifier underscores my commitment to leveraging advanced machine learning methodologies to achieve high accuracy in audio signal processing and classification tasks. </p>

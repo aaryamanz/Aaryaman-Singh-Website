@@ -1,0 +1,8 @@
+// Define the props that can be passed to this component
+const { label = "Click Me", link = "#" } = Astro.props;
+---
+
+<!-- Button Markup -->
+<a href={link} class="button" style="display: inline-block; margin: 10px; padding: 10px 20px; background-color: purple; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+  {label}
+</a>
