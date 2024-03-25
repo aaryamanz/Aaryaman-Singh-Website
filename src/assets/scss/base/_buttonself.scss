@@ -1,0 +1,22 @@
+.github-link {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 200px;
+    background-color: transparent;
+    color: black; /* Default text color */
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 2px solid rgb(145, 39, 191); /* Default border color */
+  }
+@media (prefers-color-scheme: dark) {
+    .github-link {
+      color: white; /* Text color in dark mode */
+      border-color: rgb(255, 255, 255); /* Border color in dark mode */
+    }
+  }
+@media screen and (max-width: 768px) {
+.github-link {
+    padding: 10px 15px; /* Reduced padding for smaller screens */
+}
+}

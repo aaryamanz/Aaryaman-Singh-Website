@@ -3,14 +3,14 @@ import { Icon } from 'astro-icon/components'
 import '/Users/aaryamansingh/Desktop/Others/Coding/Web Development/accessible-astro-starter-main/src/assets/css/styles.css';
 const { src = '/aaryamansinghphoto.png' } = Astro.props
 import '/Users/aaryamansingh/Desktop/Others/Coding/Web Development/accessible-astro-starter-main/src/assets/css/animation.css';
----
 
+---
 <section class="hero my-24">
   <div class="container">
     <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
       <div class="flex flex-col items-center gap-8 md:items-start">
         <h1 class="text-center text-6xl md:text-left lg:text-8xl">
-          <slot><span class="text-gradient">Aaryaman</span> Singh</slot>
+          <slot ><span class='gradient-text' id="typing" > I'm </span></slot>
         </h1>
         <!-- Adding gradient to the new line -->
         <div class="text-center text-xl md:text-left lg:text-2xl font-medium">
@@ -39,7 +39,7 @@ import '/Users/aaryamansingh/Desktop/Others/Coding/Web Development/accessible-as
           </a>
         </div>
       </div>
-      <img class="hidden lg:block rounded-full" src={src} alt="" decoding="async" />
+      {/*<img class="hidden lg:block rounded-full" src={src} alt="" decoding="async" />*/}
     </div>
   </div>
 
@@ -49,15 +49,14 @@ import '/Users/aaryamansingh/Desktop/Others/Coding/Web Development/accessible-as
       <div id='particles2' class='fixed inset-0'></div>
       <div id='particles3' class='fixed inset-0'></div>
     </div>
-
-{/*    <!-- Dark Theme: Stars -->
+{/*
+    <!-- Dark Theme: Stars -->
     <div class='relative inset-0 hidden dark:block'>
       <div id='stars1' class='fixed inset-0'></div>
       <div id='stars2' class='fixed inset-0'></div>
       <div id='stars3' class='fixed inset-0'></div>
     </div>
 */}
-    <script is:inline src="/js/bg.js"></script>
-
-
+<script is:inline src="/js/bg.js"></script>
+<script is:inline src="/js/text.js"></script>
 </section>

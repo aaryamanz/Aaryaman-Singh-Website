@@ -15,7 +15,8 @@ $breakpoints: (
       @content;
     }
   } @else if (type_of($breakpoint) == number) {
-    @media (min-width: $breakpoint+"px") {
+    // Correctly add "px" to a number using interpolation
+    @media (min-width: #{$breakpoint} + "px") {
       @content;
     }
   }

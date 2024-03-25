@@ -5,14 +5,14 @@ import Feature from '../components/Feature.astro'
 import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
 import ContentMedia2 from '../components/ContentMedia2.astro'
-import myButton from '../components/myButton.astro';
-
+import '/Users/aaryamansingh/Desktop/Others/Coding/Web Development/accessible-astro-starter-main/src/assets/scss/base/_buttonself.scss';
+import '/Users/aaryamansingh/Desktop/Others/Coding/Web Development/accessible-astro-starter-main/src/assets/css/styles.css';
 ---
 <DefaultLayout title="Portfolio">
 
-  <section class="mb-32 mt-64">
+  <section class="mb-20 mt-32" >
     <div class="container">
-      <h2 class="mb-16 text-6xl">Projects</h2>
+      <h2 class="mb-8 text-6xl">Projects</h2>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
         <Counter count="3+" title="Design" sub="Mechnical" />
         <Counter count="1+" title="AI" sub="Coding" />
@@ -22,11 +22,8 @@ import myButton from '../components/myButton.astro';
     </div>
   </section>
 
-    <div class="container">
-
-    <h1 class="mb-16 text-6l" style="text-align: center;">Mechanical Design</h1>
-
-
+    <div class="container" >
+    <h1 class="mb-8 text-6l" style="text-align: center;">Mechanical Design</h1>
     <ContentMedia imgSrc="/portfolio/3dprinter.PNG" reverseImg={true}>
     <h2>FDM: 3D Printer</h2>
     <p class="text-2l">
@@ -47,7 +44,7 @@ import myButton from '../components/myButton.astro';
     </p>
     </ContentMedia>
 
-    <h1 class="mb-16 text-6l" style="text-align: center;">Technical</h1>
+    <h1 class="mb-8 text-6l" style="text-align: center;">Technical</h1>
 
     <ContentMedia2 imgSrc="/portfolio/bracelet3.jpg" reverseImg={true}>
     <h2>Smart Alerting Bracelet</h2>
@@ -71,35 +68,14 @@ import myButton from '../components/myButton.astro';
     </p>
     </ContentMedia2>
 
-    <h1 class="mb-16 text-6l" style="text-align: center;">Artificial Intelligence</h1>
+    <h1 class="mb-8 text-6l" style="text-align: center;">Artificial Intelligence</h1>
 
     <ContentMedia imgSrc="/portfolio/music1.png" reverseImg={true}>
     <h2>Music Genre Categorization: Deep Learning</h2>
     <a href="https://github.com/aaryamanz/music-genre-categorization" class="github-link">Visit GitHub</a>
-    <style>
-      .github-link {
-        display: inline-block;
-        margin: 5px;
-        padding: 10px 200px;
-        background-color: transparent;
-        color: black; /* Default text color */
-        text-decoration: none;
-        border-radius: 15px;
-        font-weight: bold;
-        border: 2px solid black; /* Default border color */
-      }
-      @media (prefers-color-scheme: dark) {
-        .github-link {
-          color: white; /* Text color in dark mode */
-          border-color: white; /* Border color in dark mode */
-        }
-      }
-    </style>
-
     I enhanced the GTZAN dataset through data augmentation and conducted a detailed analysis of the audio signals. By visualizing these signals in the time domain and examining their frequency components over 0.01-second intervals using Fast Fourier Transform (FFT), I gained insights into the underlying patterns of the audio samples. This analysis enabled me to generate spectrograms, providing a visual representation of the spectrum of frequencies in the audio files as they vary with time.
-
+    
     To further harness the power of deep learning for audio classification, I utilized the AlexNet neural network as a feature extractor. This approach allowed me to capture the essential features from the spectrograms effectively. Building on this, I implemented a fully connected neural network to classify the audio samples. This combination of a sophisticated feature extraction technique with a robust classifier underscores my commitment to leveraging advanced machine learning methodologies to achieve high accuracy in audio signal processing and classification tasks. </p>
     </ContentMedia>
     </div>
-
 </DefaultLayout>

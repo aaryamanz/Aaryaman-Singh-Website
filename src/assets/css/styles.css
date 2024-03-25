@@ -16,3 +16,58 @@
 #stars1, #stars2, #stars3 {
     animation: twinkling 3s ease-in-out infinite alternate;
   }
+
+.gradient-text {
+    background-image: linear-gradient(45deg, #e000b3, #333399);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline; /* Ensure the gradient follows the text closely */
+  }
+.gradient-text2 {
+    background-image: linear-gradient(45deg, #007991, #78FFD6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline; /* Ensure the gradient follows the text closely */
+  }
+  
+#typing {
+    font-family: monospace;
+    font-size: clamp(16px, 5vw, 60px);
+    white-space: nowrap; /* Prevents wrapping by default */
+    overflow: hidden;
+    border-right: .15em solid; /* Simulates the cursor */
+    animation: blink-caret .25s step-end infinite;
+}
+
+/* Cursor Blink Animation */
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@media (max-width: 768px) {
+    #typing {
+        font-size: 40px; /* Smaller screens */
+        white-space: normal; /* Allows text wrapping on smaller screens */
+    }
+}
+
+/* Using a class */
+.my-portfolio-section {
+  margin-top: 2rem; /* Adjusted top margin */
+  margin-bottom: 2rem; /* Adjusted bottom margin */
+}
+
+/* Or using an ID */
+#portfolioSection {
+  margin-top: 2rem; /* Adjusted top margin */
+  margin-bottom: 2rem; /* Adjusted bottom margin */
+}
+.text-6xl {
+  text-align: center;
+  margin-bottom: 50px; /* Your existing styling */
+}
+
