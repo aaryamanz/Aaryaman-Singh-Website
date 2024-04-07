@@ -7,6 +7,15 @@ import ContentMedia from '../components/ContentMedia.astro'
 import ContentMedia2 from '../components/ContentMedia2.astro'
 ---
 <DefaultLayout title="Home">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2YP36JNKW1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2YP36JNKW1');
+</script>
   <Hero />
     <ContentMedia imgSrc="logo-University-of-Toronto-removebg-preview.png">
     <h2>About Me</h2>
