@@ -1,0 +1,124 @@
+.skills {
+    background-color: #f8f8f800;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    max-width: 90%; 
+    margin: auto; /* Ensures that the margin is automatically applied to both left and right, centering the block */
+    display: block; 
+    box-sizing: border-box;
+  }
+  
+  .skills h1, .skills__subtitle, .skills__categories {
+    margin: 0 auto; /* Center aligns these elements within the skills container */
+    display: inline-block; /* Makes the elements only as wide as their content */
+    text-align: center; /* Ensures text within these blocks is centered */
+  }
+  .skills__categories, .skills__category, .skills__list {
+    box-sizing: border-box;
+  }
+  .skills__title {
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1rem;
+  }
+  
+  .skills__subtitle {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #000000; /* Default text color */
+    font-size: 1.5rem; /* Size of the font */
+    font-weight: bold; /* Make text bold */
+    letter-spacing: 0.1rem; /* Adjust letter spacing */
+  }
+  .skills__subtitle .highlight {
+    background: linear-gradient(45deg, #662D8C, #ED1E79); /* Adjust gradient colors as needed */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Make the text color transparent to reveal the background */
+    display: inline; /* Ensure the element doesn't behave like a block element */
+  }
+  
+  
+  .skills__categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    align-items: center; /* Vertically align items in the center, if needed */
+  }
+  
+  .skills__category {
+    width: auto;
+    text-align: center; /* Center-aligns all text within each category */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    padding: 2rem;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+  
+  .skills__category-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 1rem;
+  }
+  
+  .skills__list {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Using flexbox to center items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    width: 100%; /* Ensure the list uses the full width of its container */
+  }
+  
+  .skills__item {
+    margin-bottom: 0.5rem;
+    position: relative;
+    width: 100%; /* Match width to ensure alignment */
+    display: flex; /* Use flex to align icon and text */
+    justify-content: center; /* Center everything horizontally */
+    line-height: 1.5;
+    color: #000000;
+    padding-left: 0; /* Remove padding if using flexbox for alignment */
+    text-align: center; /* Center align the text */
+  }
+  
+  .skills__item::before {
+    content: '✔'; /* Unicode character for a check mark */
+    margin-right: 10px; /* Space between the icon and text */
+    color: #4CAF50; /* Icon color */
+  }
+  
+  
+  /* Optional: Add a hover effect to category titles for interactivity */
+  .skills__category-title:hover {
+    color: #9300b8; /* Change color on hover */
+    transition: color 0.03s;
+  }
+  @media (max-width: 768px) {
+    .skills__categories {
+      flex-direction: column;
+      align-items: center; /* Strengthen alignment settings for mobile */
+    }
+  
+    .skills__category {
+      width: 100%; /* Using full width to ensure proper alignment */
+      margin: auto; /* Centering horizontally */
+      padding: 1rem; /* Adjust padding if necessary */
+      text-align: center; /* Centering text within the category */
+      box-sizing: border-box; /* Includes padding and border in the element's total width */
+    }
+  
+    .skills__category-title {
+      text-align: center; /* Ensuring the title is centered */
+    }
+  
+    .skills__item {
+      justify-content: center; /* Centering content within the item */
+    }
+  }
+  

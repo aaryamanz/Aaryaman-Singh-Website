@@ -5,8 +5,10 @@ import Feature from '../components/Feature.astro'
 import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
 import ContentMedia2 from '../components/ContentMedia2.astro'
+import '/src/assets/css/Skills.css';
 ---
 <DefaultLayout title="Home">
+<meta name="google-site-verification" content="WuL6y36yV0_PKG-Q_dyGO5PWHBdEU7FGxY2XpwgXOss" />
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2YP36JNKW1"></script>
 <script>
@@ -28,6 +30,38 @@ import ContentMedia2 from '../components/ContentMedia2.astro'
     exploring new ideas.
     </p>
   </ContentMedia>
+
+  <section class="skills">
+      <h1 class="text-center text-6xl md:text-left lg:text-8xl">
+      <slot ><span class='gradient-text'> SKILLS </span></slot>
+    </h1>
+      <p class="skills__subtitle">Here are some <span class="highlight">programming languages </span>I use for development,<br>
+       along with the <span class="highlight">technologies </span>I am skilled in utilizing across different operating systems</p>
+  <div class="skills__categories">
+    <div class="skills__category">
+      <h3 class="skills__category-title" >PROGRAMMING LANGUAGES</h3>
+      <ul class="skills__list">
+        <!-- Add your skills here -->
+        <li class="skills__item">Python</li>
+        <li class="skills__item">C</li>
+        <li class="skills__item">Java</li>
+         <li class="skills__item">JavaScript</li>
+        <!-- ...other skills -->
+      </ul>
+    </div>
+    <div class="skills__category">
+      <h3 class="skills__category-title">SOFTWARE & TECHNOLOGIES</h3>
+      <ul class="skills__list">
+        <!-- Add your technologies here -->
+        <li class="skills__item">GitHub</li>
+        <li class="skills__item">SolidWorks</li>
+        <li class="skills__item">AutoCAD</li>
+        <li class="skills__item">AnsysWorkBench</li>
+        <!-- ...other technologies -->
+      </ul>
+    </div>
+  </div>
+  </section>
 
   <section class="my-64">
     <div class="container">
