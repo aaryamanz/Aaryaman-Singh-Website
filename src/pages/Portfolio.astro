@@ -22,16 +22,16 @@ import '/Users/aaryamansingh/Desktop/Others/Coding/Web Development/accessible-as
     <div class="container">
       <h2 class="mb-8 text-6xl">Projects</h2>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
-        <Counter count="3+" title="Design" sub="Mechanical" />
-        <Counter count="1+" title="AI" sub="Coding" />
+        <Counter count="6+" title="Design" sub="Engineering"/>
+        <Counter count="3+" title="AI" sub="Coding" />
         <Counter count="3+" title="Technical" sub="Design+Coding" />
-        <Counter count="2+" title="Years" sub="Experience" />
+        <Counter count="2.5+" title="Years" sub="Experience" />
       </div>
     </div>
   </section>
 
     <div class="container" >
-    <h1 class="mb-8 text-6l" style="text-align: center;">Mechanical Design</h1>
+    <h1 class="mb-8 text-6l" style="text-align: center;">Engineering Design</h1>
     <ContentMedia imgSrc="/portfolio/3dprinter.PNG" reverseImg={true}>
     <h2>FDM: 3D Printer</h2>
     <p class="text-2l">
@@ -85,5 +85,33 @@ import '/Users/aaryamansingh/Desktop/Others/Coding/Web Development/accessible-as
     
     To further harness the power of deep learning for audio classification, I utilized the AlexNet neural network as a feature extractor. This approach allowed me to capture the essential features from the spectrograms effectively. Building on this, I implemented a fully connected neural network to classify the audio samples. This combination of a sophisticated feature extraction technique with a robust classifier underscores my commitment to leveraging advanced machine learning methodologies to achieve high accuracy in audio signal processing and classification tasks. </p>
     </ContentMedia>
+
+    <ContentMedia imgSrc="/portfolio/output1.png" reverseImg={true}>
+    <h2>Autonomous Driving Car with Advanced Lane and Object Detection</h2>
+    <a href="https://github.com/aaryamanz/autonomous-driving" class="github-link">Visit GitHub</a>
+    <p> Utilized a CNN based on NVIDIA’s model for real-time autonomous navigation in the Udacity simulator. Integrated OpenCV and YOLOv3 for accurate lane detection and object recognition, enhancing decision-making with real-time performance metrics. </p>
+    </ContentMedia>
+
+    <h1 class="mb-8 text-6l" style="text-align: center;">Financial Engineering Projects</h1>
+
+    <ContentMedia2 imgSrc="/portfolio/trading.png" reverseImg={true}>
+    <h2>Quantitative Trading Strategy with Backtesting and Risk Management </h2>
+    <p class="text-2l">
+    <p>
+    Developed an algorithmic trading strategy in Python using 50-day and 200-day moving average crossovers combined with an Average True Range (ATR) volatility filter to generate reliable buy/sell signals. Performed comprehensive backtesting on historical stock data to optimize strategy parameters, resulting in a 50% increase in profitability compared to traditional crossover methods.
+    Prepared risk management techniques, including position sizing and stop-loss orders, to minimize potential losses and improve the strategy's risk-adjusted returns.
+    </p>
+    </ContentMedia2>
+
+    <ContentMedia imgSrc="/portfolio/MPT.png" reverseImg={true}>
+    <h2>Portfolio Optimization using Modern Portfolio Theory (MPT)</h2>
+    <p class="text-2l">
+    Developed a Python model for optimizing a tech stock portfolio using Markowitz's Modern Portfolio Theory. 
+    Simulated 10,000 portfolios, calculated key financial metrics, and constructed the Efficient Frontier.  
+    Achieved maximum Sharpe ratio of 1.04, optimized portfolio allocation leading to a risk-adjusted return improvement.
+    Optimized portfolio allocation: 62.47% Google, 23.75% Tesla, and 13.77% Apple.
+    </p>
+    </ContentMedia>
+
     </div>
 </DefaultLayout>
