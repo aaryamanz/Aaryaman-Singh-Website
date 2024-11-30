@@ -22,16 +22,15 @@ import '/src/assets/css/Skills.css';
     <ContentMedia imgSrc="logo-University-of-Toronto-removebg-preview.png">
     <h2>About Me</h2>
     <p class="text-2l">
-I'm Aaryaman Singh, a third-year Mechanical Engineering student at the University of Toronto with a strong passion for engineering entrepreneurship and cutting-edge technology. Based in Toronto, I have a deep interest in startups, AI, and machine learning, and I thrive on curiosity and innovation.
-
-If you're looking for a driven and adaptable individual who is passionate about leveraging technology to create meaningful solutions, let's connect. Whether you're exploring new opportunities or just looking to share ideas, I'm always open to new connections and collaborations.
+      I'm Aaryaman Singh, a third-year Engineering student at the University of Toronto, pursuing a double minor in Artificial Intelligence and Business. With a growing passion for finance, I am deeply intrigued by the intersection of data, technology, and financial markets. My curiosity drives me to explore how quantitative methods, machine learning, and analytics can optimize investment strategies and drive informed decision-making.
+      Based in Toronto, I’m excited about leveraging my engineering background to bring a unique perspective to the financial world. If you’re looking for a driven and adaptable individual with a strong analytical foundation and a passion for creating data-driven solutions, let’s connect. I’m always eager to collaborate, exchange ideas, and explore new opportunities in the world of finance.
     </p>
   </ContentMedia>
 
-  <section class="skills">
-      <h1 class="text-center text-6xl md:text-left lg:text-8xl">
-      <slot ><span class='gradient-text'> SKILLS </span></slot>
-    </h1>
+  <section class="flex flex-col items-center text-center">
+    <h1 class="text-center lg:text-left text-5xl lg:text-8xl">
+      <slot><span class='gradient-text'> SKILLS </span></slot>
+    </h1>       
       <p class="skills__subtitle">Here are some <span class="highlight">programming languages </span>I use for development,<br>
        along with the <span class="highlight">technologies </span>I am skilled in utilizing across different operating systems</p>
   <div class="skills__categories">
@@ -68,12 +67,6 @@ If you're looking for a driven and adaptable individual who is passionate about 
     <div class="container">
       <h2 class="mb-16 text-4xl" center >Projects</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="mdi:tailwind" title="FDM 3D Printer">
-          Engineered a fully functional extruder and baseplate moving mechanism for an FDM 3D Printer using SolidWorks. Conducted comprehensive part selection and cost analysis. Made engineering drawings and specifications.
-        </Feature>
-        <Feature icon="mdi:book-open-page-variant" title="Gearbox Design">
-        Designed a right-angle gearbox with a 3:1 reduction ratio in SolidWorks, applying GD&T. Implemented lean Six Sigma for rapid prototyping, reducing print time to under 6 hours and assembly to under 10 minutes.
-        </Feature>
         <Feature icon="mdi:looks" title="Autonomous Driving Car with Advanced Lane and Object Detection">
         Utilized a CNN based on NVIDIA’s model for real-time autonomous navigation in the Udacity simulator. Integrated OpenCV and YOLOv3 for accurate lane detection and object recognition, enhancing decision-making with real-time performance metrics.
         </Feature>
@@ -91,6 +84,12 @@ If you're looking for a driven and adaptable individual who is passionate about 
         Simulated 10,000 portfolios, calculated key financial metrics, and constructed the Efficient Frontier.  
         Achieved maximum Sharpe ratio of 1.04, optimized portfolio allocation leading to a risk-adjusted return improvement.
         Optimized portfolio allocation: 62.47% Google, 23.75% Tesla, and 13.77% Apple.
+        </Feature>
+        <Feature icon="mdi:tailwind" title="FDM 3D Printer">
+          Engineered a fully functional extruder and baseplate moving mechanism for an FDM 3D Printer using SolidWorks. Conducted comprehensive part selection and cost analysis. Made engineering drawings and specifications.
+        </Feature>
+        <Feature icon="mdi:book-open-page-variant" title="Gearbox Design">
+        Designed a right-angle gearbox with a 3:1 reduction ratio in SolidWorks, applying GD&T. Implemented lean Six Sigma for rapid prototyping, reducing print time to under 6 hours and assembly to under 10 minutes.
         </Feature>
       </div>
     </div>
